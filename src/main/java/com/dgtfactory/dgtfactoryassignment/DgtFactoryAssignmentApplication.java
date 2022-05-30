@@ -1,0 +1,20 @@
+package com.dgtfactory.dgtfactoryassignment;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class DgtFactoryAssignmentApplication {
+
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(DgtFactoryAssignmentApplication.class, args);
+    }
+
+}
